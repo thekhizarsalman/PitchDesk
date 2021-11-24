@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+  }
+
+body{
+    background: black;
+}
+
+.header {
+  min-height: 10vh;
+  width: 100%;
+  background-color: turquoise;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  }
+
+nav {
+  display: flex;
+  padding: 1% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tit {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#tit:hover{
+    color: black;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover {
+    color: black;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+}
+/* ----- Companies ----- */
+.companies {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.row {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.comp-col {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.design {
+    background-color: gray;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.col-title h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container:hover .comp-col{
+    background-color: rgba(68, 226, 210, 0.7);
+}
+
+.container:hover .design{
+    opacity: 0;
+}
+
+.col-title {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.container:hover .col-title {
+    opacity: 1;
+    bottom: 49%;
+}
+
+/* ----- HOME ----- */
+.header-home {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.5), turquoise), url("HEADERS-DESIGN.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* .header-home nav {
+    background-color: turquoise;
+} */
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*no clue what this does*/
+  text-align: center;
+}
+
+.text-box img {
+    align-items: center;
+    border: 1px solid #000;
+    padding: 0px 0px;
+}
+
+#name {
+    margin: 30px 0px;
+    font-size: 62px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px; /*top left-right bottom*/
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn-reg {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn-reg:hover {
+    border-color: yellow;
+    background-color: yellow;
+    color: #000;
+}
+
+/* #tit1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#tit1:hover{
+    color: turquoise;
+} */
+
+.nav-links1 {
+  flex: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.nav-links1 ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.nav-links1 ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    transition: 0.4s;
+}
+
+.nav-links1 ul li a:hover {
+    color: #fff;
+}
+
+nav img {
+    width: 300px;
+}
+
+.fa {
+  padding-top: 20px;
+  color: black;
+  margin: 50px 25px;
+  background-color: #fff;
+  width: 50px;
+  height: 33px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.fa:hover {
+  background-color: yellow;
+}
