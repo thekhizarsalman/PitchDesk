@@ -292,6 +292,7 @@ nav .fa {
     display: block;
   }
   .nav-links1 {
+    opacity: 0;
     position: absolute;
     background: yellow;
     height: 100vh;
