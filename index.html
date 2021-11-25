@@ -19,7 +19,8 @@
     <section class="header-home">
         <nav>
         <a href=""><img src="pd_linear_logo.png" alt=""></a>
-        <div class="nav-links1">
+        <div class="nav-links1" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -27,6 +28,7 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <div class="text-box">
@@ -47,5 +49,16 @@
         ></a>
       </div>
     </section>
+
+    <!-- ----- JS for Toggle Menu ----- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
 </body>
 </html>
