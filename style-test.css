@@ -310,14 +310,14 @@ nav .fa {
   .nav-links1 {
     opacity: 0;
     position: absolute;
-    background: linear-gradient(rgba(134, 138, 99, 0.4), turquoise);
+    background: linear-gradient(yellow, turquoise);
     height: 100vh;
     width: 80%;
     top: 0;
     left: 18%;
     /* right: -200px; */
     text-align: left;
-    z-index: 2;
+    z-index: -1;
     transition: 0.6s;
   }
   nav .fa {
