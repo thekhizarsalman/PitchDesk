@@ -5,7 +5,15 @@
   }
 
 body{
-    background: linear-gradient(turquoise, black);
+  background-image: linear-gradient(rgba(134, 138, 99, 0.4), rgba(0, 223, 205, 1), turquoise, black), url("HEADERS-DESIGN.jpg");
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
 }
 
 .header {
@@ -114,7 +122,7 @@ h1 {
 }
 
 .container:hover .comp-col{
-    background-color: rgba(68, 226, 210, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .container:hover .design{
@@ -135,10 +143,22 @@ h1 {
 }
 
 .container:hover .col-title {
-    opacity: 1;
-    bottom: 47%;
+  opacity: 1;
+  bottom: 47%;
 }
 
 nav img {
-    width: 300px;
+  width: 300px;
+}
+
+.design img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
 }
