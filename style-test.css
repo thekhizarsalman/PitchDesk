@@ -267,7 +267,7 @@ p {
 }
 
 nav img {
-    width: 300px;
+    width: 275px;
 }
 
 .text-box .fa {
@@ -345,5 +345,100 @@ nav .fa {
     border-radius: 50%;
     transition: 0.5s;
     border: 1px solid #fff;
+  }
+}
+
+/* ----- PAYMENT ------ */
+.pay-box {
+  width: 80%;
+  background-color: rgba(49, 49, 49, 0.9);
+  position: absolute;
+  top: -14%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 5px;
+}
+
+.pay-box h1 {
+  padding: 20px 30px;
+}
+
+.pay-box img {
+  display: inline-block;
+  margin: 10px 30px 30px;
+  border-radius: 5px;
+}
+
+.pay-box h3 {
+  vertical-align: top;
+  color: #fff;
+  font-size: 25px;
+}
+
+.enter {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3%;
+  /* margin-top: 40px; */
+  margin-left: 4%;
+}
+
+.enter input {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  width: 300px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.enter input:focus {
+  outline: none;
+}
+
+.pay-box a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 25%;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.pay-box a:hover {
+  background-color: yellow;
+  color: #000;
+  border-color: #000;
+}
+
+@media(max-width: 700px) {
+  .pay-box {
+    top: -33%;
+  }
+  .pay-box h1{
+    font-size: 3.45vh;
+  }
+  .pay-box img {
+    width: 53vw;
+    margin-left: 15%;
+    margin-top: 0.3vh;
+  }
+  .pay-box h3 {
+    font-size: 2.25vh;
+  }
+  .enter {
+    margin-top: 0.3vh;
+  }
+  .enter input {
+    width: 53.33333vw;
+  }
+  .pay-box a {
+    display: inline-block;
+    margin: 1% 0 4%;
   }
 }
