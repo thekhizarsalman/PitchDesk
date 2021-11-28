@@ -42,3 +42,21 @@
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeeCHoGiLFL0GLkrNtghDtsaf_xxUxVaJI9baPtZFkC8zg2A/viewform?usp=sf_link" target="_blank">PAYMENT DONE? CLICK HERE</a>
           </div>
       </div>
+    </section>
+
+    <!-- ----- JS for Toggle Menu ----- -->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.opacity = "1";
+      // navLinks.style.right = "0";
+      navLinks.style.zIndex = 1;
+    }
+    function hideMenu() {
+      navLinks.style.opacity = "0";
+      // navLinks.style.right = "-200px";
+      navLinks.style.zIndex = -1;
+    }
+  </script>
+</body>
+</html>
