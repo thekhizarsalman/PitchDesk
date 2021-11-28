@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="style-cat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Outfit:wght@100;200;300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Outfit:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body>
     <section class="header">
         <nav>
-        <a href="index.html"><img src="pd_linear_logo.png" alt=""></a>
-        <div class="nav-links" id="navLinks">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="categories.html">CATEGORIES</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
+            <a href="index.html"><img src="pd linear main black logo trans.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
     </section>
 
 <!-- ----- Companies ----- -->
@@ -40,7 +46,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>DESIGN</h1>
+                    <h1>DESIGNING</h1>
                 </div>
             </div>
             <div class="container">
@@ -51,7 +57,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>WEB DEV</h1>
+                    <h1>IT SOLUTIONS</h1>
                 </div>
             </div>
             <div class="container">
@@ -62,7 +68,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>APP DEV</h1>
+                    <h1>ENTERTAINMENT</h1>
                 </div>
             </div>  
         </div>
@@ -77,7 +83,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>FOOD AND SERVICES</h1>
+                    <h1>EVENTS & FOOD</h1>
                 </div>
             </div>
             <div class="container">
@@ -88,7 +94,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>ENTERTAINMENT</h1>
+                    <h1>PRODUCT-BASED</h1>
                 </div>
             </div>
             <div class="container">
@@ -99,7 +105,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>GIFTING</h1>
+                    <h1>SERVICE-BASED</h1>
                 </div>
             </div>  
         </div>
@@ -114,7 +120,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>SOCIAL SERVICES</h1>
+                    <h1>EDUCATIONAL</h1>
                 </div>
             </div>
             <div class="container">
@@ -125,7 +131,7 @@
                     <div class="design"></div>
                 </div>
                 <div class="col-title">
-                    <h1>EDUCATIONAL COURSES</h1>
+                    <h1>WELL-BEING</h1>
                 </div>
             </div>
             <div class="container">
@@ -146,5 +152,20 @@
     <section class="footer">
         <p>Copyright © 2021 | Pitch Desk</p>
     </section>
+
+    <!-- ----- JS For Toggle Menu ----- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.opacity = "1";
+        // navLinks.style.right = "0";
+        navLinks.style.zIndex = 1;
+      }
+      function hideMenu() {
+        navLinks.style.opacity = "0";
+        // navLinks.style.right = "-200px";
+        navLinks.style.zIndex = -1;
+      }
+    </script>
 </body>
 </html>
