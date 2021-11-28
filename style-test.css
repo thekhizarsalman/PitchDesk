@@ -418,7 +418,7 @@ nav .fa {
 
 @media(max-width: 700px) {
   .pay-box {
-    top: -33%;
+    top: -33vh;
   }
   .pay-box h1{
     font-size: 3.45vh;
