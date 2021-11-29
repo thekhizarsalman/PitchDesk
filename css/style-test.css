@@ -491,3 +491,25 @@ nav .fa {
     width: 100%;
   }
 }
+
+.text-box1 {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*no clue what this does*/
+  text-align: center;
+}
+
+.text-box1 h1 {
+  font-size: 62px;
+  padding: 20vh 0;
+}
+
+@media screen and (max-width: 700px) {
+  .text-box1 h1 {
+    font-size: 23px;
+  }
+}
