@@ -36,5 +36,20 @@
             <h3>NOTE: Subscription process will start after registration completion</h3>
         </div>
     </section>
+    
+<!-- ----- JS FOR TOGGLE MENU ----- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.opacity = "1";
+        // navLinks.style.right = "0";
+        navLinks.style.zIndex = 1;
+      }
+      function hideMenu() {
+        navLinks.style.opacity = "0";
+        // navLinks.style.right = "-200px";
+        navLinks.style.zIndex = -1;
+      }
+    </script>
 </body>
 </html>
