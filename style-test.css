@@ -296,7 +296,7 @@ nav .fa {
   border-radius: 5px;
 }
 
-.pay-box h3 {
+/* .pay-box h3 {
   vertical-align: top;
   color: #fff;
   font-size: 20px;
@@ -313,7 +313,7 @@ nav .fa {
   display: inline-block;
   vertical-align: top;
   /* margin-top: 3%; */
-  /* margin-top: 40px; */
+  /* margin-top: 40px; 
   margin-left: 4%;
 }
 
@@ -363,11 +363,67 @@ nav .fa {
   color: #fff;
   padding: 0%;
   padding-bottom: 8%;
+} */
+
+.pay-form {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1.5%;
+  /* margin-top: 40px; */
+  margin-left: 4%;
+}
+
+.pay-form label {
+  vertical-align: top;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.input-f {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  width: 300px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.input-f:focus {
+  outline: none;
+}
+
+.pay-form p {
+  color: #fff;
+  padding: 0%;
+  padding-bottom: 8%;
+}
+
+.pay-form button {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5%;
+  padding: 15px 50px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.7s;
+  background: transparent;
+}
+
+.pay-box button:hover {
+  background-color: yellow;
+  border-color: #000;
+  color: #000;
 }
 
 @media screen and (max-width: 700px) {
   .pay-box {
-    top: -30vh;
+    top: -27vh;
     text-align: center;
   }
   .pay-box h1{
@@ -381,24 +437,25 @@ nav .fa {
     margin-top: 0.3vh;
     margin-bottom: 15px;
   }
-  .pay-box h3 {
+  .pay-form label {
     font-size: 2.25vh;
     margin-top: 0%;
   }
-  .enter {
-    margin-top: 0.3vh;
+  .pay-form {
+    margin-top: 0vh;
     margin-left: 0%;
   }
-  .enter input {
+  .input-f {
     width: 53.33333vw;
+    margin-bottom: 10px;
   }
-  .pay-box a {
+  .pay-form button {
     display: inline-block;
     margin: 1% 0 4%;
     font-size: 12px;
     padding: 8px 16px;
   }
-  .pay-box p {
+  .pay-form p {
     font-size: 10px;
     padding-bottom: 4%;
   }
