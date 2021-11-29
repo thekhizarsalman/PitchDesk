@@ -333,21 +333,29 @@ nav .fa {
   outline: none;
 }
 
-.pay-box a {
+.pay-box button {
   display: block;
-  text-decoration: none;
-  color: #fff;
   margin-top: 0;
   margin-bottom: 5%;
-  padding: 15px 25px;
+  padding: 15px 50px;
   border: 1px solid #fff;
   text-align: center;
+  transition: 0.7s;
+  background: transparent;
+}
+
+.pay-box a {
+  text-decoration: none;
+  color: #fff;
   transition: 0.7s;
 }
 
 .pay-box a:hover {
+  color: black;
+}
+
+.pay-box button:hover {
   background-color: yellow;
-  color: #000;
   border-color: #000;
 }
 
