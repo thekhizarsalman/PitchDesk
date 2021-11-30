@@ -173,6 +173,13 @@ nav .fa {
 }
 
 @media screen and (max-width: 700px) {
+  .cat-head {
+    width: 60%;
+    text-align: center;
+  }
+  .cat-head h1 {
+    font-size: 25px;
+  }
   .row {
     display: block;
   }
