@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitchDesk</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link rel="stylesheet" href="css/style-cat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Outfit:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/8820194917.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/pd linear main black logo trans.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="plans.html">PLANS & PRICING</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="companies1">
+        <div class="comp-head">
+            <h1>OTHER COMPANIES</h1>
+        </div>
+        <div class="row-comp">
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+        <div class="row-comp">
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+        <div class="row-comp">
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="comp">
+                <img src="images/logo.png" alt="">
+                <div class="comp-text">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------- FOOTER ------- -->
+    <section class="footer">
+        <p>Copyright © 2021 | Pitch Desk</p>
+    </section>
+
+    <!-- ----- JS FOR TOGGLE MENU ----- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.opacity = "1";
+        // navLinks.style.right = "0";
+        navLinks.style.zIndex = 1;
+      }
+      function hideMenu() {
+        navLinks.style.opacity = "0";
+        // navLinks.style.right = "-200px";
+        navLinks.style.zIndex = -1;
+      }
+    </script>
+</body>
+</html>
