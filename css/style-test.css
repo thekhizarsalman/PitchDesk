@@ -280,14 +280,16 @@ nav .fa {
   width: 80%;
   background-color: rgba(49, 49, 49, 0.9);
   position: absolute;
-  top: -14%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 50%);
   border-radius: 5px;
+  text-align: center;
 }
 
 .pay-box h1 {
-  padding: 20px 30px;
+  margin-top: 17.5px;
+  padding: 30px 30px;
 }
 
 .pay-box img {
