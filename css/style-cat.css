@@ -272,7 +272,7 @@ nav .fa {
 .comp-text {
   display: block;
   width: 100%;
-  text-align: left;
+  text-align: center;
   color: #fff;
   height: 5.141vh;
   font-size: 25px;
@@ -288,15 +288,27 @@ nav .fa {
 
 .comp p {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   position: absolute;
   height: 0;
   top: 0;
   opacity: 0;
   padding: 18px 8%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   transition: 0.8s ease;
   color: #fff;
+}
+
+.comp a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.comp a:hover {
+  color: rgb(92, 92, 92);
+  border-color: rgb(92, 92, 92);
 }
 
 .comp:hover {
@@ -333,5 +345,81 @@ nav .fa {
     font-size: 10px;
     height: 20%;
     margin-top: 63.2%;
+  }
+}
+
+
+/* ----- ACTIVITY ----- */
+.column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card img {
+  width: 50%;
+}
+  
+.card {
+  background-color: rgba(0, 255, 106, 0.7);
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 10px 10px 20px rgb(83, 83, 83);
+  /* border: 1px solid black; */
+}
+
+.card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  font-weight: 500;
+}
+
+.card a {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.7s;
+}
+
+.card a:hover {
+  background-color: rgba(255, 196, 0, 0.85);
+  color: #000;
+  border-color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  .column {   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .anyimage {
+    display: block;
+    margin-left: 15%;
+    /* margin-right: auto; */
+  }
+  .card {
+    background-color: rgba(84,231,172,0.8);
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin: 10px;
+    border: 0.5px solid black;
   }
 }
