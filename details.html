@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitchDesk</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link rel="stylesheet" href="css/style-test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Outfit:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <section class="header-home">
+        <nav>
+        <a href="index.html"><img src="images/pd_linear_logo.png" alt=""></a>
+        <div class="nav-links1" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="categories.html">CATEGORIES</a></li>
+            <li><a href="plans.html">SUBSCRIPTION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="pay-box">
+        <!-- <h1>REGISTRATIONS CLOSED!</h1>" 
+           <img src="images/10rs.jpg.jpeg" alt=""> 
+           <div class="enter">
+            <h3 class="top-h3">COMPANY NAME</h3>
+            <input type="text" required/>
+            <h3>BATCH</h3>
+            <input type="text" required/>
+            <h3>COMPANY REGISTRATION ID</h3>
+            <input type="text" required/>
+            <p>To get your registration ID, call +91 95097 92473 after making your payment.</p>
+            <button type="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeeCHoGiLFL0GLkrNtghDtsaf_xxUxVaJI9baPtZFkC8zg2A/viewform?usp=sf_link" target="_blank">NEXT</a></button>
+          </div> -->
+          <div class="pay-form">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeeCHoGiLFL0GLkrNtghDtsaf_xxUxVaJI9baPtZFkC8zg2A/viewform?usp=sf_link" target="_blank">
+              <label for="c-name">COMPANY NAME</label><br>
+              <input type="text" name="c-name" class="input-f" required><br>
+              <label for="batch">BATCH</label><br>
+              <input type="text" name="batch" class="input-f" required><br>
+              <label for="regid">COMPANY REGISTRATION ID</label><br>
+              <input type="text" name="regid" class="input-f" pattern="[A-Za-z]{1}\d{6}" required><br>
+              <p>Get Ready with your QR Code Scanner to pay,<br> Click on Next.</p><br>
+              <button type="button"><a href="payment.html" target="_blank">NEXT</a></button>
+            </form>
+          </div>
+      </div>
+    </section>
+
+    <!-- ----- JS for Toggle Menu ----- -->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.opacity = "1";
+      // navLinks.style.right = "0";
+      navLinks.style.zIndex = 1;
+    }
+    function hideMenu() {
+      navLinks.style.opacity = "0";
+      // navLinks.style.right = "-200px";
+      navLinks.style.zIndex = -1;
+    }
+  </script>
+</body>
+</html>
